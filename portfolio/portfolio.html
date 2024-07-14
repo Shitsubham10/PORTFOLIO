@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body{
+            background-color: rgb(32, 30, 30);
+        }
+        .navbar{
+            background-color: black;
+            border: 4px solid red;
+            border-radius: 30px;
+            background-image: url("WhatsApp\ Image\ 2023-09-23\ at\ 11.34.59.jpeg");
+            background-position: 90%;
+            background-size: 140px 140px;
+            background-repeat: no-repeat;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 5px 7px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: rgb(214, 209, 209);
+            padding: 40px 20px;
+            font-weight: bold;
+            
+        }
+        .navbar li a:hover{
+            color: blue
+        }
+        .container{
+            width: 90%;
+            height: 500px;
+            border: 3px solid black;
+            margin: 20px 30px;
+            padding-left: 13px;
+            padding-right: 23px;
+            border-radius: 20px;
+            background-image:linear-gradient(to right,rgb(107, 107, 186),black);
+            box-shadow: 0px 0px 10px 5px silver; 
+        }
+        .homeimage{
+            position: relative;
+            display: flex;
+            height: 200px;
+            width: 80%;
+            padding-left: 70%;
+            padding-top: 30px;
+        }
+        h1{
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 75px;
+            cursor:default;
+            
+        }
+        span{
+            color: yellow;
+        }
+        #id1{
+            color: greenyellow;
+            font-weight: bolder;
+        }
+        p{
+            color: silver;
+            padding-left: 40px;
+        }
+        #btn1{
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border: 1px solid yellowgreen;
+            font-size:large;
+        }
+        #btn2{
+            background-color: red;
+            color: aliceblue;
+            cursor: pointer;
+            border: 2px solid yellowgreen;
+
+            
+        }
+        #heading2{
+            color: silver;
+            text-shadow: 0px 0px 10px red;
+            text-decoration:wavy;
+            padding-left: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #cont2{
+            width: 90%;
+            height: 350px;
+            border: 2px solid black;
+            border-radius: 0px;
+            background-image: none;
+            box-shadow: 0px 0px 10px 5px grey;
+            background-image: url("WhatsApp\ Image\ 2023-09-23\ at\ 18.31.37.jpeg");
+            background-size: 730px 400px;
+            background-repeat: no-repeat;
+        }
+        .heading2{
+            padding-left: 900px;
+            color: red;
+            cursor: default;
+        }
+        #heading3{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0px 0px 10px greenyellow;
+            text-align:center ;
+        }
+        #heading3:hover{
+            color: red;
+        }
+        #skills{
+            color: aqua;
+        }
+        .box1{
+            width: 50%;
+            height: 250px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 5px 3px silver;
+            font-family: cursive;
+        }
+        .box2{
+            width: 50%;
+            height: 250px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 5px 3px silver;
+            font-family: cursive;
+        }
+        .container3{
+            display: flex;
+            gap: 10px;
+        }
+        #project{
+            padding-left: 22px;
+            color: yellow;
+            text-shadow: 0px 0px 15px red;
+        }
+       .parallax{
+         color: rgb(223, 126, 126);
+         padding-left: 10px;
+         text-shadow: 0px 0px 5px grey;
+         margin-left: 50px;
+       }
+       #project1{
+         width: 80%;
+         height: 350px;
+         border: 2px solid black;
+         box-shadow: 0px 0px 5px 5px gold;
+         background-image: url("parallax.gif");
+         background-size: 1200px 350px;
+         background-repeat: no-repeat;
+       }
+    .parallax1{
+        margin-top: 29%;
+        margin-left: 90%;
+        border: 2px solid rgb(120, 187, 120);
+        size: 20px;
+        font-weight: bold;
+    }
+    .parallax1:hover{
+        background-color: white;
+        color: red;
+        cursor: pointer;
+    }
+    .project2{
+        color: aquamarine;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 20px;
+        text-shadow: 0px 0px 5px greenyellow;
+    }
+    .projectmedical{
+        width: 80%;
+        height: 350px;
+        border: 2px solid white;
+        margin-left: 50px;
+        box-shadow: 0px 0px 5px 5px rgb(215, 112, 112);
+        background-image: url("WhatsApp\ Image\ 2023-09-26\ at\ 03.27.38.jpeg");
+        background-size: 1150px 341px;
+        background-repeat: no-repeat;
+    }
+    .box{
+        height:350px;
+        width: 10%;
+        background-color:rgb(146, 145, 145);
+        position: relative;
+        animation-name: animation1;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 3;
+
+    }
+    @keyframes animation1 {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    .projectmedical:hover{
+        animation-name: animation1;
+    }
+    .box1{
+        display: flex;
+        justify-content: space-between;
+        justify-items:center;
+        flex-direction: column;
+    }
+    .html1{
+        border: 1px solid gray;
+      height: 5px;
+      width: 80%;
+    }
+    .css{
+        border: 1px solid gray;
+        height: 5px;
+      width: 80%;
+    }
+    
+    .c{
+        border: 1px solid gray;
+        height: 5px;
+      width: 80%;
+    }
+    
+    .js{
+        border: 1px solid gray;
+        height: 5px;
+      width: 80%;
+    }
+    .html{
+        color: aqua;
+        background-color: black;
+        margin-top: 35px;
+    }
+    .c{
+        color: red;
+    }
+    .js{
+        color: aquamarine;
+    }
+    .loader1{
+       background-color: rgb(26, 26, 242);
+        height: 5px;
+        width: 4%;
+        animation-name: name1;
+        animation-iteration-count: 2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes name1 {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 90%;
+        }
+    }
+    .loader2{
+        background-color: rgb(26, 26, 242);
+        height: 5px;
+        width: 4%;
+        animation-name: name2;
+        animation-iteration-count: 2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes name2 {
+        from{
+          width: 0%;
+        }
+        to{
+          width: 93%;
+        } 
+    }
+    .loader3{
+        background-color:  rgb(26, 26, 242);
+        height: 5px;
+        width: 4%;
+        animation-name: name3;
+        animation-iteration-count: 2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes name3 {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 85%;
+        }
+        
+    }
+    .loader4{
+        background-color: rgb(26, 26, 242);
+        height: 5px;
+        width: 4%;
+        animation-name: name4;
+        animation-iteration-count: 2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes name4 {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 90%;
+        }  
+    }
+    .percent1{
+        margin-left: 80%;
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0px 0px 2px rgb(189, 185, 185);
+    }
+    .percent2{
+        margin-left: 85%;
+        color: coral;
+        text-shadow: 0px 0px 2px rgb(189, 185, 185);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .percent3{
+        margin-left: 82%;
+        color: coral;
+        text-shadow: 0px 0px 2px rgb(189, 185, 185);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .percent4{
+        margin-left: 82%;
+        color: coral;
+        text-shadow: 0px 0px 2px rgb(189, 185, 185);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    #contact{
+        margin-left: 30%;
+        text-shadow: 4px 4px 5px salmon;
+    }
+    #contact:hover{
+        visibility: hidden;
+        color: darkcyan;
+    }
+    .contactme{
+        width: 90%;
+        height: 500px;
+        border: 2px solid black;
+        margin-left: 50px;
+        border-radius: 70px;
+        box-shadow: 0px 0px 5px 5px darkcyan;
+    }
+    ::placeholder{
+        color:coral;
+    }
+     input[type=text]{
+        margin: 83px;
+        background-color:black;
+        padding: 12px;
+        width: 30%;
+        border: 2px solid red;
+        box-shadow: 0px 0px 5px 5px cyan;
+        
+    }
+    input[type=email]{
+        margin: 70px;
+        background-color: black;
+        padding: 12px;
+        width: 40%;
+    }
+    input[type=text1]{
+        margin: 90px;
+        background-color:black;
+        padding: 12px;
+        width: 60%;
+        border: 2px solid red;
+        box-shadow: 0px 0px 5px 5px cyan;
+        height: 100px;
+        
+    }
+    h3{
+        color: azure;
+        margin-left: 40px;
+        font-weight: bold;
+        font-size: larger;
+        text-shadow: 0px 0px 5px red ;
+    }
+    .homeimage{
+        margin-right: 34px;
+    }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <!-- ths is the navigation menu -->
+    <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="#"><span id="id1">PORT</span>FOLIO</a></li>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">ABOUT ME</a></li>
+               <li><a href="#">CONTACT US</a></li>
+               <li><a href="#">PROJECTS</a></li>       
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="homeimage">
+            <img src="portfolioimage.jpg.jpeg" alt=""height="430px"width="400px">
+        </div>
+       <h1>HI</h1>
+       <h1>I am <span>Subham</span></h1>
+       <h1>a passionate front end developer</h1>
+       <p>Web designer and developer from
+        <span id="place">Kollkata, West Bengal</span> i create
+        custom websites to help businesses
+       </p>
+       <button class="btn" id="btn1">Hire me</button>
+       <button id="btn2">Contact me</button>
+    </div>
+    <h1><span id="heading2">My Tech Tools</span></h1>
+    <div class="container" id="cont2">
+        <h2 class="heading2">Tools I Used</h2>
+        
+    </div>
+    <!-- div project  -->
+     <h1 id="heading3">My<span id="skills">skill</span></h1>
+     <div class="container3">
+        <div class="box1"><span class="one">coding Skills</span>
+        <div class="html1">
+            <div class="loader1"></div>
+            <span class="html">HTML</span>
+            <span class="percent1">90%</span>
+        </div>
+        <div class="css">
+            <div class="loader2"></div>
+        <span class="css">CSS</span>
+        <span class="percent2">93%</span>
+    </div>
+        <div class="c++">
+            <div class="loader3"></div>
+        <span class="c">c++</span>
+        <span class="percent3">95%</span>
+    </div>
+        <div class="js">
+            <div class="loader4"></div>
+        <span class="js">Javascript</span>
+        <span class="percent4">85%</span>
+    </div>
+    </div>
+        <div class="box2"><span class="two">Professional Skills</span></div>
+     </div>
+     <h1 id="project">My PROJECTS</h1>
+     <h2 class="parallax">parallax websites</h2>
+     <!-- div for parallax website -->
+     <div class="parallax" id="project1">
+        <button class="parallax1">read more</button>
+     </div>
+     <!-- div for project number 2 -->
+     <h2 class="project2">Food Deliverywebsite</h2>
+     <div class="projectmedical" id="cont3">
+        <div class="box"></div>
+     </div>
+     <h1 class="mainheading3" id="contact">Contact Me</h1>
+     <!-- div for the last page -->
+     <div class="contactme">
+        <input type="text" id="name"
+        placeholder="write your name">
+        <input type="email" name="email1" id="email"placeholder="write your email id">
+        <h3>write down your queries below?</h3>
+        <input type="text1" name="name1" id="name2"placeholder="write your queries">
+         
+     </div>
+
+
+
+
+
+
+
+</body>
+</html>
